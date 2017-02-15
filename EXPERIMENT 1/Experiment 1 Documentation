@@ -1,0 +1,94 @@
+FOSS LAB EXPERIMENT 1 (TVE15CS042)
+----------------------------------
+
+AIM:- Getting started with basic Linux Commands and directory structure, execute file, directory operations.
+
+CREATING FILES AND DIRECTORIES:_
+---------------------------------
+>> touch <filename>  --> Creates a file
+>> mkdir <dirname>  --> Creates a directory
+
+CURRENT WORKING DIRECTORY:-
+----------------------------
+
+>> pwd --> Displays the current working directory
+
+CHANGE DIRECTORY:-
+-------------------
+
+>> cd <dirname> --> Changes the directory to the subdirectory of the current directory
+>> cd .. --> Changes the directory to the parent directory of the current directory
+>> cd ~ --> Changes the directory to the home directory of the current user
+>> cd / --> Changes the directory to the root directory of the current user
+>> cd ~<username> --> Changes the directory to the home sirectory of a different user
+
+VIEWING CONTENTS OF TEXT FILES:-
+--------------------------------
+
+>> cat <filename> --> Displays the text scroll off the screen
+>> cat <file1> <file2> --> Concatenates the contents of the two text files
+>> more <filename> --> Displays the file one scornful at a time
+>> less <filename> --> Similat but faster than the more command
+
+LISTING FILES AND DIRECTORIES:-
+--------------------------------
+
+>> ls --> Lists the files in the current directory
+>> ls -l --> Prevides a long listing of all the files
+>> ls -l -h --> Same as the above command but the file sizes will be in human readable form
+>> ls -F --> Marks all the executable with a * and all the directories with a /
+>> ls --color --> Shows a coloured listing of all the files
+>> ls -a --> Shows all the files in the present directory including the special dot files
+
+COPYING FILES AND DIRECTORIES:-
+-------------------------------
+
+>> cp <file1> <file2> --> Copies file 1 to file 2
+>> cp <file1> <dirname> --> Copies file1 to Directory <dirname>
+>> cp -r <dirname1> <dirname2> --> Copies dirname1 directory to directory dirname2
+
+RENAMING FILES AND DIRECTORIES:- 
+---------------------------------
+
+>>mv <oldname> <newname> --> Renames file with old name to new name
+>> mv <olddir> <newdir> --> Renames directory with name olddir to newdir
+>> mv <filename> <dirname> --> Moves files with name as filename to directory dirname
+
+SOME USEFUL COMMANDS:-
+----------------------
+
+>> clear --> Clears the terminal screen
+>> locate <filename> --> Searches for a specified filename
+>> passwd --> Prompt to change the password of the current user
+>> whoami --> Displays the details of the current logged in user
+
+GETTING HELP:-
+--------------
+
+>> man <commandname> --> Finds out what a command does
+>> man -f <commandname> --> One line summary of what the command does
+>> man -k <keyword> --> Searches for a command with a particular keyword
+
+IMPORTANT FILES IN LINUX:-
+---------------------------
+
+--> /bin # Essential user command and binary files
+--> /boot # Static files of the boot loader
+--> /dev # Device files
+--> /etc # Host specific system configuration
+--> /home # User home directories
+--> /lib # Essential shared libraries and kernal modules
+--> /mnt # Mount point for devices
+--> /opt # Add on application software packages
+--> /sbin # System binary files
+--> /tmp # Temporary files
+--> /usr # User utilities and applications
+--> /var # Variable files
+--> /root # Home directory of the user
+
+EXECUTING FILES:-
+-----------------
+File execution in Linux :-
+--> cd to the directory which contains the file to be executed
+--> Type "chmod +x <name of the file>" which provides system permissions for the file to be executed
+--> Type "sh./<name of the file>" to execute the file
