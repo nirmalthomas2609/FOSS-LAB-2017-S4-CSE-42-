@@ -20,4 +20,40 @@ Example:- ls >> file.txt ==> Appends the output of the command ls to the file wi
 
 >>sort < <file1> > <file2> ==> Processes the contents of file 1 and redirects its output to file 2
 
-PIPES
+PIPES:-
+-------
+
+#Pipes are used to redirect the standard output of one command to the standard inout of another command
+
+>> <command1> | <command2> ==> The standard output of command 1 is redirected to the standard input of command 2
+Example:- ls -lt | head ==> Displays the 10 newest files in the current directory
+		  du | sort -nr ==> Displays a list of directories, the amount of space they consume, sorted from the largest to the smallest in the amount of memory each directory occupies
+
+FILTERS:-
+----------
+
+#Filters take standard input and perform an operation upon it and sends the results to the standard output. In this way, they can be used to process information in powerful ways
+
+* sort --> Sorts the standard input and sends the sorted ouput to the standard output
+Example :- sort <filename> ==> Rearranges each line of the file in alphabetical order and outputs it to the standard output
+
+* uniq --> Given a sorted stream of data from the standard input, it removes the duplicate lines of data and returns it to the standard output
+Example:- uniq <filename> ==> Removes the duplicate lines of text from the filename and outputs it to the standard output
+ 
+* grep --> Examines each line of data it recieves from the standard input and output every line that contains a certain specified pattern of characters
+Example:- grep "string" <filename> ==> Examines each line of the file and outputs every line of the file containing the input string to the standard output
+
+* fmt --> Reads text from standard input and outputs the formatted text to the standard output
+Example:- fmt <filename> ==> Formats the contents of the file and outputs it to the standard output
+
+* pr --> Takes data from the standard input and splits the data into pages with page breaks, footers and headers in preparation for printing
+Example:- pr <filename> ==> Displays the contents of the file one page after the other and returns the output to the standard output
+
+* head --> Outputs the first few lines of the file and returns it to the standard output
+Example:- head <filename> ==> Displays the first ten lines of the file
+
+* tail --> Outputs the last few lines of the file and returns it to the standard output
+Example:- last <filename> ==> Displays the last ten lines of the file
+
+* tr --> Translates Characters. Can be used to perfrom tasks such as uppercase to lowercase conversions or changing the line termination characters from one type to another
+Example:- tr [:lower:] [:upper:] ==> Takes input from the keyboard and outputs each character of the input to uppercase characters and outputs it to the standard output
