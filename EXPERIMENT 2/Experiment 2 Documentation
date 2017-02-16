@@ -1,0 +1,23 @@
+FOSS LAB EXPERIMENT 2 (TVE15CS042)
+==================================
+
+AIM:- Linux commands for redirection, pipes, filters, job control, file ownerships, file permissions, links and system file hierarchy
+
+REDIRECTION OF STANDARD OUTPUT/INPUT:-
+---------------------------------------
+
+# By default most command line programs send their output to the standard output which by default displays it on the screen
+
+>> <command_name> > <filename> ==> Overwrites the file <file_name> with the output of the command
+Example:- ls > file.txt ==> Overwrites the contents in file.txt with the output of the command ls
+
+>> <command_name> >> <filename> ==> Appends the output of the command to the file filename
+Example:- ls >> file.txt ==> Appends the output of the command ls to the file with the filename file.txt
+
+# Most of the command line programms accept its input from the standard input and the standard input by default gets its contents from the keyboard. Similar to standard ouput it can be redirected.
+
+>> sort < <filename> ==> Sort command processes the contents of the file with the name <filename>
+
+>>sort < <file1> > <file2> ==> Processes the contents of file 1 and redirects its output to file 2
+
+PIPES
