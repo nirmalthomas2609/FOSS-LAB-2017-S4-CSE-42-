@@ -57,3 +57,22 @@ Example:- last <filename> ==> Displays the last ten lines of the file
 
 * tr --> Translates Characters. Can be used to perfrom tasks such as uppercase to lowercase conversions or changing the line termination characters from one type to another
 Example:- tr [:lower:] [:upper:] ==> Takes input from the keyboard and outputs each character of the input to uppercase characters and outputs it to the standard output
+
+JOB CONTROL:-
+--------------
+
+#There are several commands used to control processes in Linux
+
+* ps --> List the processes running in the system. ps is a external command which tells you about the processes running on the system
+Example:- ps ==> Lists all the processes running on the system 
+	  ps aux ==> Lists all the processes (a= show process for all the users, u=display the process's user/owner, x= also show the 		  processes not attached to the terminal)
+* kill --> Sends a signal to the processes specified (usually used to stop the execution of a process)
+Example:- kill -l ==> List the signal names that can be sent to the processes in linux
+	  kill <PID> ==> To kill the process specified by the process ID <PID>. To obtain the process id of a certain process use the ps 		  command.
+	  kill -s SIGKILL <PID> ==> Used to send the SIGKILL signal to the process with the process id PID. This command is used to forcefully 		  kill a process without any memory cleanup. 
+# A signal is an asynchronous notification sent to a process or to a specific thread within the same process in order to notify it of an event that occurred.
+* jobs --> An alternate way of listing the processes. jobs is a shell builtin command which gives you information internal to the shell such as the job numbers
+Example:- jobs ==> Lists the jobs that the current shell is managing
+* bg --> Used to put a process in the background
+* fg --> Used to put a process in the foreground
+
