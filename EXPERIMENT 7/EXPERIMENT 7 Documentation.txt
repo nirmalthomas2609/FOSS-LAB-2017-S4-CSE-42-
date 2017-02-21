@@ -1,0 +1,83 @@
+﻿GIT:-
+-----
+
+INSTALLING GIT:-
+---------------
+sudo package-name git (Ubuntu)
+
+MAKING GIT RECOGNIZE YOU:-
+--------------------------
+After installing git in your system open terminal and configure your git with your git account
+
+git config --global user.name "nirmalthomas2609"
+git config --global user.email "nirmalthomas26@gmail.com"
+
+TO GET THE CONFIGURATION LIST:-
+-------------------------------
+git config --list
+
+TO GET HELP REGARDING VARIOUS GIT COMMANDS:-
+---------------------------------------------
+git help <command>
+
+INITIALIZING A REPOSITORY (LOCAL):-
+---------------------------
+git init
+
+ADDING FILES TO THE REPOSITORY:-
+---------------------------------
+git add . ==> add all the files in the folder to the local repo
+git add *.c ==> add all the c files in the folder to the local repo
+
+SAVING THE CHANGES THAT HAS BEEN ADDED TO THE LOCAL REPO:-
+-----------------------------------------------------------
+git commit -m "message" ==> Saves all the changes made to the local repo with the following message
+
+CLONING THE FILES FROM THE WEB SERVER ON GITHUB:-
+--------------------------------------------------
+git clone <url> ==> Clones all the files from the repository on the github website into the folder
+
+STATUS OF THE GIT REPOSITORY:-
+------------------------------
+git status ==> displays the status of the git reposiory
+
+LOG OF THE GIT REPOSITORY:-
+--------------------------
+git log ==> Displays the list of commits made to the repo'
+
+DIFFERENTIATE BETWEEN COMMITS:-
+-------------------------------
+
+git diff commit_id1 commit_id2 ==> Displays the status between the two commits made to the repo
+
+BRANCH:-
+--------
+git branch <branchname> ==> creates a new branch
+git checkout <branchname> ==> switches to the new branch
+git checkout master ==> switches to the new branch
+git -d <branchname> ==> Deletes a branch
+
+ADDING ORIGIN LINK:-
+--------------------
+git remote add origin <url_of_the repo> ==> stores the url of the remote server to the local repo
+
+PUSH INTO THE REMOTE REPO:-
+---------------------------
+git push origin <branchname>
+
+REFLOG:-
+---------
+git reflog ==> the commits done by the configured user
+
+MERGING TWO BRANCHES:-
+----------------------
+git merge <branch1> <branch2>
+
+BLAME:-
+-------
+git blame
+
+FORKING:-
+---------
+git fork
+
