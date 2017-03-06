@@ -76,3 +76,22 @@ Example:- jobs ==> Lists the jobs that the current shell is managing
 * bg --> Used to put a process in the background
 * fg --> Used to put a process in the foreground
 
+FILE OWNERSHIPS AND FILE PERMISSIONS:-
+--------------------------------------
+
+#There are three types of users in Linux:
+-Owners:- The username of the person who owns the file or the folder. By default, the person who created the file or the folder becomes the owner of the file or the folder.
+-Group:- The usergroup that owns the file or the folder. All users who belong in the same group as the user who created the file or the folder have the same access permissions to the file or the folder.
+-Others:- A user who isn't the owner of the file or the folder and does not belong in the same ghroup of users owning the file or the folder.
+
+#There are three types of permissions:
+-Read(r):- This gives permission to merely open a file or folder and view its contents
+-Write(w):- This gives permission to overwrite, append or to delete a file or a folder.
+-Execute(X):- This gives permissions to run a file. For example to run a script or a program.
+
+-->Changing File ownerships and permissions:-
+---------------------------------------------
+*ls -l ==> Lists all the files in the given folder with the corresponding file or folder permissions.
+
+*chmod +<permission> <filename> ==> to include a certain permission for a file
+
