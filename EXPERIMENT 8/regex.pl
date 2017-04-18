@@ -1,3 +1,4 @@
+
 print("Please enter a string on which you would like to perform the regular expression operations\n");
 $a=<>;
 $c=0;
@@ -81,7 +82,7 @@ while ($c==0)
 				$t2=$t2.$regex[$r];
 			}
 		}
-		$a=~tr/$t1/$t2/;
+		$a=~tr/lo/zap/;
 		print ("The current contents of the string are $a\n");
 	}
 	print("Enter 0 if you would like to continue with the program, Enter 1 to exit from the program\n");
