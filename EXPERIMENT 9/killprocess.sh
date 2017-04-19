@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 #max cpu % load
-MAX_CPU=90
+MAX_CPU=15
 #max execution time for CPU percentage > MAX_CPU (in seconds 7200s=2h)
 MAX_SEC=1800
 #sort by cpu
