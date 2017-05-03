@@ -1,6 +1,4 @@
 # Python-Gui-calc
-# Created by Satvik Chauhan
-# Copyright 2011 Satvik Chauhan .
 import pygtk
 pygtk.require('2.0')
 import gtk
